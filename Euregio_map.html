@@ -36,6 +36,61 @@
             </style>
         
 </head>
+<!-- Title -->
+<div id="map-title" style="
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    padding: 8px 16px;
+    font-size: 1.5em;
+    font-weight: bold;
+    z-index: 999;
+    border-radius: 4px;">
+  My Awesome Map
+</div>
+
+<!-- Legend -->
+<div id="legend-box" style="
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(255,255,255,0.9);
+    padding: 10px;
+    font-size: 0.9em;
+    z-index: 999;
+    max-width: 300px;
+    border-radius: 6px;
+    display: block;">
+  <strong>Legend</strong><br>
+  🟢 Green Point: Data A<br>
+  🔴 Red Point: Data B<br>
+  ℹ️ Zoom in for more detail.
+</div>
+
+<!-- Toggle Button -->
+<button onclick="toggleLegend()" style="
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9em;
+    cursor: pointer;">
+  Toggle Legend
+</button>
+
+<script>
+  function toggleLegend() {
+    const legend = document.getElementById('legend-box');
+    legend.style.display = (legend.style.display === 'none') ? 'block' : 'none';
+  }
+</script>
+
 <body>
     
     
