@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Exposome Elixirs</title>
+  <style>
+    /* Page layout */
+    html,body{height:100%;margin:0;background:#ffffff;color:#000000;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+    .wrap{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px}
+
+    /* Title (styled as a link but appears like plain black text) */
+    .title-link{font-size:40px;font-weight:700;color:#000000;text-decoration:none;}
+    .title-link:focus{outline:2px solid #000;outline-offset:4px}
+
+    /* Tiles for names */
+    .tiles{margin-top:28px;display:flex;gap:18px}
+    .tile{border:1px solid rgba(0,0,0,0.08);padding:14px 18px;border-radius:8px;min-width:160px;text-align:center;background:#fff}
+    .tile .name{font-weight:600}
+    .tile .role{font-size:20px;color:#444;margin-top:12px}
+
+    /* Make everything intentionally minimal */
+    @media (max-width:560px){.tiles{flex-direction:column;width:100%;align-items:stretch}.tile{width:100%;min-width:unset}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Title: clickable link to another page hosted on the same GitHub Pages site. -->
+    <!-- It is a plain-looking black title (no underline), pointing to a relative path so it's internal to the same site. -->
+    <a class="title-link" id="main-title" href="https://jaspermostert.github.io/PFAS_map/Euregio_map.html" rel="noopener">
+    Exposome Elixirs: Accumulating PFAS and Pesticides
+    </a>
+
+
+    <!-- Three names shown as tiles below the title -->
+    <div class="tiles" role="list">
+      <div class="tile" role="listitem">
+        <div class="name">Lola</div>
+        <div class="role">European Commissioner of Health</div>
+      </div>
+
+      <div class="tile" role="listitem">
+        <div class="name">Jasper</div>
+        <div class="role">Data Analyst</div>
+      </div>
+
+      <div class="tile" role="listitem">
+        <div class="name">Jimmy</div>
+        <div class="role">Enviromental Scientist</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
